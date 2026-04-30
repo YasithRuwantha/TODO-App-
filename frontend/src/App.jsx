@@ -41,7 +41,7 @@ function App() {
     Task Board
   </h1>
 
-  {/* Create Task */}
+  
   <div className="flex justify-center gap-3 mb-8">
   <input
     className="border p-3 rounded-lg w-52 shadow"
