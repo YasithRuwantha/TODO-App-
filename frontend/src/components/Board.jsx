@@ -13,9 +13,6 @@ const Board = ({ todos, refresh }) => {
     // If dropped in same column → ignore
     if (source.droppableId === destination.droppableId) return;
 
-    // Update done based on column
-    const done = destination.droppableId === "completed";
-
     await axios.patch(`${API}/${draggableId}/toggle`);
     refresh();
   };
